@@ -1,0 +1,11 @@
+{
+  "name": "advent-of-code-2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kaylasween/advent-of-code-2019.git",
+  "author": "Kayla Sween <kayla@kaylasween.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node": "^13.1.0"
+  }
+}

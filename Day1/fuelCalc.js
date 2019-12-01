@@ -1,6 +1,9 @@
-//add node 🤷‍♀️
+let fs = require("fs")
 
-let masses = [112908, 61769, 65967, 51494, 99689]
+let fileContent = fs.readFileSync("/Users/kaylasween/Documents/Projects/advent-of-code-2019/Day1/input.txt", 'utf-8')
+
+let masses = fileContent.split('\n')
+console.log(masses)
 let totalFuel = 0
 
 masses.map(mass => {
