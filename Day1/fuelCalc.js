@@ -7,8 +7,17 @@ console.log(masses)
 let totalFuel = 0
 
 masses.map(mass => {
-  massFuel = Math.floor(mass/3) - 2
+  let massFuel = Math.floor(mass/3) - 2
   totalFuel = totalFuel + massFuel
+  let fuelForFuel = massFuel
+  while(fuelForFuel > 0){
+    fuelForFuel = Math.floor(fuelForFuel/3) - 2
+    if(fuelForFuel <= 0){
+      fuelForFuel = 0
+    }
+    totalFuel = totalFuel + fuelForFuel
+    console.log(fuelForFuel)
+  }
 })
 
 console.log(totalFuel)
