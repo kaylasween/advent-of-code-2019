@@ -31,4 +31,12 @@ for (i = 0; i < wires.length; i++) {
   }
 }
 
+let distances = Object.keys(paths)
+    .filter(coordinates => paths[coordinates] === 10) //get coordinates that had been used by both wires
+    .map(coordinates =>
+      coordinates.split(', ').map(d => d * 1).map(Math.abs)
+    )
+    .map(e => e[0] + e[1]) // get Manhattan distance
+console.log(distances)
+
 console.log(paths)
