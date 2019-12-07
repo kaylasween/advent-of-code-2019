@@ -10,7 +10,7 @@ for (i = 136760; i <= 595730; i++){
     sortedOrder.push(pass)
   }
   for (j=0; j < pass.length; j++) {
-    if(pass[j] === pass[j+1]){
+    if(pass[j] === pass[j+1] && pass[j] !== pass[j+2] && pass[j] !== pass[j-1]){
       hasSameDigitAdjacentToCurrentDigit.push(pass)
     }
   }
